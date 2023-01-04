@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JS</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+<body>
+    <div class="card" id="calculator" style="width: 18rem;">
+      
+        <div class="full_body">
+            <form>
+                <label id="small_screen">cmt</label>
+               
+                <label id="small_scren">swarna</label>
+                
+                <div type="text" id="screen">
+                    <label id="numOne">20</label>
+                    <label id="operator">+</label>
+                    <label id="numTwo">30</label><br>
+                    <label id="result">40</label>
+                </div>
+            </form>
+            <div class="btn" role="group" aria-label="Basic outlined example">
+                <button type="button" class="btn outline"  id="btn">c</button>
+                <button type="button" class="btn outline">%</button>
+                <button type="button" class="btn outline">*</button>
+                <button type="button" class="btn outline">/</button>
+            </div><br>
+            <div class="btn" id="btn" role="group" aria-label="Basic outlined example">
+                <button type="button" class="btn" id="outline">7</button>
+                <button type="button" class="btn" id="outline">8</button>
+                <button type="button" class="btn" id="outline">9</button>
+                <button type="button" class="btn outline" id="outline">*</button>
+            </div><br>
+            <div class="btn" role="group" aria-label="Basic outlined example">
+                <button type="button" class="btn">4</button>
+                <button type="button" class="btn">5</button>
+                <button type="button" class="btn">6</button>
+                <button type="button" class="btn outline">-</button>
+            </div><br>
+            <div class="btn" role="group" aria-label="Basic outlined example">
+                <button type="button" class="btn">1</button>
+                <button type="button" class="btn">2</button>
+                <button type="button" class="btn ">3</button>
+                <button type="button" class="btn outline">+</button>
+            </div><br>
+            <div class="btn" role="group" aria-label="Basic outlined example">
+                <button type="button" class="btn">00</button>
+                <button type="button" class="btn">0</button>
+                <button type="button" class="btn">,</button>
+                <button type="button" class="btn outline">=</button>
+            </div>
+        </div>
+        
+      </div>
+      <script>
+
+   
+      
+      //console.log(sum)
+      //document.getElementById("numOne").innerHTML(30);
+      //document.getElementById("operator").innerHTML(+);
+      //document.getElementById("numTow").innerHTML(20);
+      //document.getElementById("result").innerHTML(50);
+
+
+
+
+
+let numOne=0;
+let numTwo=0;
+let sum=0;
+let multi=0;
+let div=0;
+let sub=0;
+let operator=0;
+
+numOne = 40;
+numTwo = 20;
+operator=prompt("enter your operator"," ");
+console.log(operator)
+
+if(operator==="+"){
+     sum=numOne+numTwo;
+     console.log(sum)
+}
+else if(operator==="-"){
+     sub= numOne-numTwo;
+     console.log(sub)}
+//else if(operator==="*"){
+    // multi= numOne*numTwo;
+  //   console.log(multi)}
+//else if (operator==="/") {
+   //  div=numOne/numTwo;
+ //    console.log(div)
+//}
+else{
+    console.log("error")
+     }
+//console.log(numTwo)
+ document.getElementById("numOne").innerHTML=numOne;
+ document.getElementById("operator").innerHTML=operator;
+ document.getElementById("numTwo").innerHTML=numTwo;
+ document.getElementById("result").innerHTML=sum;
+ //document.getElementById("result").innerHTML=sub;
+ //document.getElementById("result").innerHTML=div;
+
+
+ //document.getElementById("result").innerHTML=multi;
+
+
+
+
+ 
+     
+      </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script src="main.js"></script>
+</body>
+</html>

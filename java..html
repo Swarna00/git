@@ -19,7 +19,7 @@
                     <label id="numOne">20</label>
                     <label id="operator">+</label>
                     <label id="numTwo">30</label><br>
-                    <label id="result">40</label>
+                    <label id="result">50</label>
                 </div>
             </form>
             <div class="btn" role="group" aria-label="Basic outlined example">
@@ -69,6 +69,7 @@
 
 
 
+/*
 let numOne=0;
 let numTwo=0;
 let sum=0;
@@ -106,9 +107,45 @@ else{
  document.getElementById("result").innerHTML=sum;
  //document.getElementById("result").innerHTML=sub;
  //document.getElementById("result").innerHTML=div;
-
-
+*/
  //document.getElementById("result").innerHTML=multi;
+
+ function myCal(p1,p2,p3){
+     let numOne = p1;
+     let numTwo=p2;
+     let cal=p3;
+     let call =prompt("enter your operator"," ");
+     document.getElementById("numOne").innerHTML=numOne;
+     document.getElementById("operator").innerHTML=cal;
+     document.getElementById("numTwo").innerHTML=numTwo;
+     if (cal=="+"){
+          let result=numOne+numTwo;
+          //document.getElementById("result").innerHTML=result;
+          console.log(result)
+     }else if (cal=="-"){
+          let result=numOne-numTwo;
+          document.getElementById("result").innerHTML=result;
+          //console.log(result)
+          
+     }else if(cal=="*"){
+          let result=numOne*numTwo;
+          console.log(result)
+          
+     }else if(cal=="/"){
+          let result=numOne/numTwo;
+         // document.getElementById("result").innerHTML=result;
+         console.log(result)
+     }else{
+          console.log("error")
+     }
+}
+//myCal(20,20,"+")
+myCal(20,20,"-")
+//myCal(20,20,"*")
+//myCal(20,20,"/")
+
+
+
 
 
 

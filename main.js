@@ -196,3 +196,77 @@ else if(operator==="*"){
  //    console.log("error")
 //}
 
+//---Method----
+
+//---scope--
+/*
+{
+     var name ="Swarna Barua";
+         name ="Moni";
+     //console.log(name)
+}
+     //console.log(name)
+     
+
+
+     let name ="swarna barua"
+{
+     let name ="swarna"
+     //    name = "tuhin"
+     console.log(name)    
+}     
+     //console.log(name)
+*/
+
+/*
+function myCal(){
+      let myName ="Swarna"
+      console.log(myName)
+}
+myCal()
+*/
+
+/*
+let myName="swarna";
+function myCal(){
+     myName ="tuhin";
+     console.log(myName)
+}
+myCal()
+*/
+
+/*
+
+function myCal(p1,p2){
+     let numOne = p1;
+     let numTwo=p2;
+     let result=numOne+numTwo;
+     console.log(result)
+}
+myCal(20,20)
+*/
+
+function myCal(p1,p2,cal){
+     let numOne = p1;
+     let numTwo=p2;
+     let =prompt("enter your operator"," ");
+     if (cal=="+"){
+          let result=numOne+numTwo;
+          console.log(result)
+     }else if (cal=="-"){
+          let result=numOne-numTwo;
+          console.log(result)
+     }else if(cal=="*"){
+          let result=numOne*numTwo;
+          console.log(result)
+     }else if(cal=="/"){
+          let result=numOne/numTwo;
+          console.log(result)
+     }else{
+          console.log("error")
+     }
+}
+myCal(20,20,"+")
+myCal(20,20,"-")
+myCal(20,20,"*")
+myCal(20,20,"/")
